@@ -7,9 +7,10 @@ public class Printing100PrimeNumber {
     System.out.println("Enter a number : ");
     Scanner sc = new Scanner(System.in);
     int num = sc.nextInt();
-    PrintPrime(num);
+    //printPrime(num);
+    generatePrime(num);
   }
-  private static void PrintPrime(int num) {
+  private static void printPrime(int num) {
     int i=1,prcount = 1,count;
     while(prcount<=num) {
       count = 0;
@@ -23,6 +24,19 @@ public class Printing100PrimeNumber {
           prcount++;
         }
       i++;
+    }
+  }
+  //optimized version
+  private static void generatePrime(int num){
+    System.out.print("1,2");
+    if(num<=2){
+      return;
+    }
+    System.out.print(",");
+    for(int i=3;i<=num;i++){
+      if(CheckPrime.checkPrime(i)){
+        System.out.print(i+",");
+      }
     }
   }
 }

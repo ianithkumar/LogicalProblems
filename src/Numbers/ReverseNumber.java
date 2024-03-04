@@ -10,10 +10,10 @@ public class ReverseNumber {
     InputStreamReader in = new InputStreamReader(System.in);
     BufferedReader br = new BufferedReader(in);
     int num = Integer.parseInt(br.readLine());
-    int result = NumReverse(num);
+    int result = numReverse(num);
     System.out.println(result);
   }
-  private static int NumReverse(int num) {
+  private static int numReverse(int num) {
     int reverse=0,remain;
     while(num>0) {
       remain = num%10;
