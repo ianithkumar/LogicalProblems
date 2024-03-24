@@ -4,12 +4,12 @@ public class SetMatrixZeroes {
   public static void main(String a[]) {
     int arr[][] = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
     int rowLength[] = new int[arr.length];
-    int columnLength[] = new int[arr.length];
+    int columnLength[] = new int[arr[0].length];
 
     System.out.println("Before Matrix To Zero");
 
     for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr.length; j++)
+      for (int j = 0; j < arr[i].length; j++)
         System.out.print(arr[i][j] + " ");
       System.out.println();
     }
@@ -35,7 +35,7 @@ public class SetMatrixZeroes {
     System.out.println("After Matrix To Zero");
 
     for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr.length; j++)
+      for (int j = 0; j < arr[i].length; j++)
         System.out.print(arr[i][j] + " ");
       System.out.println();
     }

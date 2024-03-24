@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class CheckPrime {
   public static void main(String a[]) {
-    System.out.println("Enter a number : ");
-    Scanner sc = new Scanner(System.in);
-    int num = sc.nextInt();
+//    System.out.println("Enter a number : ");
+//    Scanner sc = new Scanner(System.in);
+    int num = 5;
     //boolean result = CheckPrime(num);
     boolean result = checkPrime(num);
     if (result == true) {
