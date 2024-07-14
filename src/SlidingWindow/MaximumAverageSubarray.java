@@ -6,20 +6,19 @@ public class MaximumAverageSubarray {
     int k = 4;                         //Output = 12.75
     System.out.println(maxAverageSubarray(nums,k));
   }
-  private static int maxAverageSubarray(int[] nums,int k){
-    int max = Integer.MIN_VALUE;
+  private static double maxAverageSubarray(int[] nums,int k){
+    double max = Integer.MIN_VALUE;
     int start = 0;
-    int end = 0;
     int windowSum = 0;
 
-    for(int i=0;i<nums.length;i++){
+    for(int end=0;end<nums.length;end++){
       windowSum +=nums[end];
-      if(end-start ==k){
-        max = Math.max(max,((windowSum)/(k)));
+      if(end-start+1 ==k){
+        max = Math.max(max,((int)windowSum)/(double)k);
         windowSum -= nums[start];
         start++;
       }
     }
-    return max;
+    return (double)max;
   }
 }
