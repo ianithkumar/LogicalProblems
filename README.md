@@ -1,3 +1,3 @@
-#Logical Programming
+# Logical Programming
 
-*Anithkumar
+* Here I'm solving some logical problem from varies platforms
