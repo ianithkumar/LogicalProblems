@@ -1,3 +1,3 @@
 # Logical Programming
 
-* Here I'm solving some logical problem from varies platforms
+* Here I will solve some logical problems from varies platforms
