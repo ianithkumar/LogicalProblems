@@ -13,6 +13,7 @@ public class Leet1207UniqueNumberOfOccurence {
     }
     System.out.println(count.values());
     HashSet<Integer> number = new HashSet(count.values());
+    System.out.println(number);
     return count.size() == number.size();
   }
 }

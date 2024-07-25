@@ -1,4 +1,4 @@
-package Arrays;
+package Matrix;
 import java.util.*;
 public class Leet54SpiralMatrix {
   public static void main(String a[]){

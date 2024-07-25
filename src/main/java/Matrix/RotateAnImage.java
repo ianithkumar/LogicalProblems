@@ -1,4 +1,4 @@
-package Arrays;
+package Matrix;
 
 public class RotateAnImage {
   public static void main(String a[]) {

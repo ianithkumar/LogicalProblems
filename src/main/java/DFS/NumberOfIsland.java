@@ -1,4 +1,4 @@
-package Graphs;
+package DFS;
 //Output  = 1;
 public class NumberOfIsland {
   public static void main(String[] a){
