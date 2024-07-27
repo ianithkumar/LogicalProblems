@@ -7,9 +7,9 @@ import java.util.*;
 
 public class BinaryTreeLevelOrderTraversal {
   public static void main(String[] a) {
-    TreeNode head = new TreeNode(3);
-    head.left = new TreeNode(9);
-    head.right = new TreeNode(20, new TreeNode(15), new TreeNode(17));
+    TreeNode head = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(17)));
+//  head.left = new TreeNode(9);
+//  head.right = new TreeNode(20, new TreeNode(15), new TreeNode(17));
     List<List<Integer>> result = levelOrder(head);
     System.out.println(result);
   }
