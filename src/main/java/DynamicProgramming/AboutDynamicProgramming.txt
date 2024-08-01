@@ -1,12 +1,12 @@
-Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler sub problems and
+* Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler sub problems and
 solving each sub problem just once, storing its solution for future reference. It is particularly useful for optimization
 problems where overlapping sub problems occur. There are two main types of DP:
 
-In the top-down approach, the problem is solved recursively and solutions to sub problems are stored to
+* In the top-down approach, the problem is solved recursively and solutions to sub problems are stored to
 avoid redundant calculations.
 
-In the Bottom-up approach, smaller sub problems are solved first and their solutions are
+* In the Bottom-up approach, smaller sub problems are solved first and their solutions are
 used to build up solutions to larger problems.
 
-DP is commonly used in problems involving sequences, such as the Fibonacci sequence, shortest path algorithms,
+* DP is commonly used in problems involving sequences, such as the Fibonacci sequence, shortest path algorithms,
 and knapsack problems, where it optimizes performance by avoiding unnecessary re-computation.
