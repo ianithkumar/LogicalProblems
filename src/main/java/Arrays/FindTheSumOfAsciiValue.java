@@ -1,4 +1,4 @@
-package main.java.Arrays;
+package Arrays;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -18,9 +18,10 @@ public class FindTheSumOfAsciiValue {
 //    int finalAnswer = findSum(finalNumber);
 //    System.out.println(finalAnswer);
 
-    System.out.println(obj.findSumAscii(arr1,arr2));
+    System.out.println(obj.findSumAscii(arr1, arr2));
   }
-  public int findSumAscii(char[] temp1,char[] temp2){
+
+  public int findSumAscii(char[] temp1, char[] temp2) {
 //    char[] arr1 = {'A', 'B', 'C'};
 //    char[] arr2 = {'B', 'C', 'D'};
 
