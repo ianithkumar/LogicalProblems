@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 public class Leet2215FindDifferenceBetweenTwoArray {
-  public static void main(String[] arr) {
+  public static void main(String[] a) {
     int nums1[] = {1, 2, 3};
     int nums2[] = {2, 4, 6};
     List<List<Integer>> result = findDifference(nums1, nums2);
