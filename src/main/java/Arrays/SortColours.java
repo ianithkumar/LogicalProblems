@@ -1,6 +1,6 @@
 package Arrays;
 
-public class SortColours {  // Here red = 0;white = 1;blue = 2 output should be in red,white,blue
+public class SortColours {  // Here red = 0;white = 1;blue = 2 output should be in the order red,white,blue
   public static void main(String a[]){
     int arr[] = {1,0,2,0,1,2,0,1,2,0,0,1,2,0};
     int i=0;
