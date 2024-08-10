@@ -1,34 +1,31 @@
 package Arrays;
 
-public class RotateArrayWithMValue {   //
+public class RotateArrayWithMValue {
   public static void main(String[] a){
-    int[] arr = {2,3,4,5,6};
-    int M = 3;
-    int length = arr.length-1;
-    int[] result = rotateArray(arr,length,M);
-    for(int num:result){
+    int[] arr = {1,2,3,4,5,6};
+    int M = 2;
+    System.out.println("Before Rotation : ");
+    for(int num:arr){
       System.out.print(num+" ");
     }
-  }
-  private static int[] rotateArray(int[] arr,int length,int M){
-    int left = 0;
-    int right = M-1;
-    while(left<length-M){
-      arr = reverse(arr,left,right);
-      left = left+M;
-      right = right+M;
+
+    for(int i=0;i<arr.length;i=i+M){
+      int start = i;
+      int end = start+M-1;
+      if(end<arr.length-1){
+        while(start<end){
+          int temp = arr[start];
+          arr[start] = arr[end];
+          arr[end] = temp;
+          start++;
+          end--;
+        }
+      }
     }
-    arr = reverse(arr,left,right);
-    return arr;
-  }
-  private static int[] reverse(int[] arr,int left,int right){
-    while(left<=right){
-      int temp = arr[left];
-      arr[left] = arr[right];
-      arr[right] = temp;
-      left++;
-      right--;
+    System.out.println();
+    System.out.println("After Rotation : ");
+    for(int num:arr){
+      System.out.print(num+" ");
     }
-    return arr;
   }
 }
