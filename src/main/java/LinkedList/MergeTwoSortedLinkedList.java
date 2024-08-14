@@ -6,31 +6,33 @@ public class MergeTwoSortedLinkedList {
     ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
     ListNode result = mergeTwoSortedLinkedList(list1, list2);
 
-    while (result.next != null) {
+    while (result != null) {
       System.out.print(result.val + " ");
+      result = result.next;
     }
   }
 
-  private static ListNode mergeTwoSortedLinkedList(ListNode list1, ListNode list2) {
+  private static ListNode mergeTwoSortedLinkedList(ListNode list1, ListNode list2){
     ListNode result = new ListNode(0);
     ListNode temp = result;
-    while (list1.next != null && list2.next != null) {
-      if (list1.val >= list2.val) {
-        temp.val = list1.val;
+    while(list1!=null && list2!=null){
+      if(list1.val<=list2.val) {
+        temp.next = list1;
         list1 = list1.next;
-      } else {
-        temp.val = list2.val;
+      }
+      else {
+        temp.next = list2;
         list2 = list2.next;
       }
       temp = temp.next;
     }
-    if (list1 != null) {
+    if(list1!=null){
       temp.next = list1;
     }
-    if (list2 != null) {
+    if(list2!=null){
       temp.next = list2;
     }
 
-    return temp.next;
+    return result.next;
   }
 }

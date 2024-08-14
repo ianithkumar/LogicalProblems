@@ -6,6 +6,8 @@ public class Leet70ClimbingStairs {
     System.out.println(climbingStairs(num));
   }
   private static int climbingStairs(int num){
+
+
     int[] dp = new int[num+1];
     dp[1] = 1;
     dp[2] = 2;
