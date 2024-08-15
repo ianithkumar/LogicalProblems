@@ -7,7 +7,7 @@ public class MinimumDepthOfBinaryTree {
   public static void main(String[] a) {
     TreeNode head = new TreeNode(3, new TreeNode(9, new TreeNode(5), new TreeNode(7)), new TreeNode(20, new TreeNode(15), new TreeNode(17)));
     int result = minimumDepthOfBinaryTree(head);
-    System.out.println("The Minimum Dpeth Level Of Binary Tree Is : ");
+    System.out.println("The Minimum Depth Level Of Binary Tree Is : ");
     System.out.println(result);
   }
 
@@ -26,7 +26,6 @@ public class MinimumDepthOfBinaryTree {
         if (node.left == null || node.right == null) {
           return levelSum;
         }
-
         if (node.left != null) {
           queue.offer(node.left);
         }
