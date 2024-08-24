@@ -16,6 +16,7 @@ public class MinimumDepthOfBinaryTree {
     int levelSum = 0;
     queue.offer(head);
 
+
     while (queue.size() > 0) {
       int size = queue.size();
       levelSum = levelSum + 1;
