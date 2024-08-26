@@ -9,7 +9,7 @@ public class LongestSubstringWithoutRepeatingCharacers {
   }
 
   private static int longestSubstringWithoutRepeatingCharacters(String s) {
-    int aPointer = 0;
+    //int aPointer = 0;
     int bPointer = 0;
     int max = 0;
     HashSet<Character> set = new HashSet<>();
@@ -20,7 +20,7 @@ public class LongestSubstringWithoutRepeatingCharacers {
         bPointer++;
       } else {
         set.remove(s.charAt(bPointer));
-        aPointer++;
+        //aPointer++;
       }
     }
 

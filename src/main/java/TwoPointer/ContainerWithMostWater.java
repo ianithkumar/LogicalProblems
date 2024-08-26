@@ -2,8 +2,8 @@ package TwoPointer;
 
 public class ContainerWithMostWater {
   public static void main(String a[]){
-    //int[] height = {1,8,6,2,5,4,8,3,7};           //Output = 49
-    int[] height = {4,3,2,1,4};
+    int[] height = {1,8,6,2,5,4,8,3,7};           //Output = 49
+    //int[] height = {4,3,2,1,4};
     int result = containerWithMostWater(height);
     System.out.println(result);
   }

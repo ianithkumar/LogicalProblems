@@ -9,17 +9,15 @@ import java.util.Queue;
 
 public class AverageOfLevelsOfBinaryTree {
   public static void main(String[] a) {
-    //TreeNode head = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(17)));
-    TreeNode head = new TreeNode(2147483647,new TreeNode(2147483647),new TreeNode(2147483647));
+    TreeNode head = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(17)));
     List<Double> result = averageOfLevelsOfBinaryTree(head);
     System.out.println(result);
   }
 
   private static List<Double> averageOfLevelsOfBinaryTree(TreeNode head) {
     List<Double> result = new ArrayList<>();
-    Queue<TreeNode> queue = new LinkedList<>();   //[2147483647,2147483647,2147483647]
+    Queue<TreeNode> queue = new LinkedList<>();
     queue.offer(head);
-
     while (queue.size() > 0) {
       int sum = 0;
       int size = queue.size();

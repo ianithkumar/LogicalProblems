@@ -2,7 +2,10 @@ package DFS;
 //Output  = 1;
 public class NumberOfIsland {
   public static void main(String[] a){
-    char[][] grid = {{'1','1','1','1','0'},{'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}};
+    char[][] grid = {{'1','1','1','1','0'},
+                     {'1','1','0','1','0'},
+                     {'1','1','0','0','0'},
+                     {'0','0','0','0','1'}};
     int result = numberOfIsland(grid);
     System.out.println(result);
 

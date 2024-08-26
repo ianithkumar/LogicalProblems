@@ -7,21 +7,21 @@ import java.util.Set;
 
 public class Leet2215FindDifferenceBetweenTwoArray {
   public static void main(String[] a) {
-    int nums1[] = {1, 2, 3};
-    int nums2[] = {2, 4, 6};
-    List<List<Integer>> result = findDifference(nums1, nums2);
+    int[] num1 = {1, 2, 3};
+    int[] num2 = {2, 4, 6};
+    List<List<Integer>> result = findDifference(num1, num2);
     System.out.println(result);
   }
 
-  private static List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
+  private static List<List<Integer>> findDifference(int[] num1, int[] num2) {
     List<List<Integer>> result = new ArrayList<>();
     Set<Integer> set1 = new HashSet<>();
-    for (int num : nums1) {
+    for (int num : num1) {
       set1.add(num);
     }
 
     Set<Integer> set2 = new HashSet<>();
-    for (int num : nums2) {
+    for (int num : num2) {
       set2.add(num);
     }
     List<Integer> list1 = new ArrayList<>();

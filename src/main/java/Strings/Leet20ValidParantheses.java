@@ -3,7 +3,7 @@ import java.util.Stack;
 
 public class Leet20ValidParantheses {
   public static void main(String[] a){
-    String parantheses = "({[]})";
+    String parantheses = "({([])})";
     System.out.println(isValidParentheses(parantheses));
   }
   private static boolean isValidParentheses(String para){

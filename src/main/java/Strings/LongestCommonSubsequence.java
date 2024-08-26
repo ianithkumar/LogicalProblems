@@ -29,7 +29,7 @@ public class LongestCommonSubsequence {
 
     public static void main(String[] args) {
       String text1 = "abcde";
-      String text2 = "ace";
+      String text2 = "acb";
       int result = longestCommonSubsequence(text1, text2);
       System.out.println("Length of longest common subsequence: " + result);
     }

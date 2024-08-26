@@ -22,9 +22,6 @@ public class FindTheSumOfAsciiValue {
   }
 
   public int findSumAscii(char[] temp1, char[] temp2) {
-//    char[] arr1 = {'A', 'B', 'C'};
-//    char[] arr2 = {'B', 'C', 'D'};
-
     int finalNumber = 0;
     Set<Integer> uniqueElement = getUniqueElement(temp1, temp2);
 

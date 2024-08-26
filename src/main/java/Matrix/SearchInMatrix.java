@@ -2,7 +2,9 @@ package Matrix;
 
 public class SearchInMatrix {
   public static void main(String[] args) {
-    int[][] matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 13, 14}};
+    int[][] matrix = {{1, 2, 3, 4},
+                      {5, 6, 7, 8},
+                      {9, 10, 13, 14}};
     int target = 13;
     System.out.println(searchInMatrix(matrix, target));
   }

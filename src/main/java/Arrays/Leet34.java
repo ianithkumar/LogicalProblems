@@ -2,8 +2,8 @@ package Arrays;
 
 public class Leet34 {
   public static void main(String a[]){
-    int nums[] = {1};
-    int target = 1;
+    int nums[] = {1,2,3};
+    int target = 3;
     int[] result = searchRange(nums,target);
     for(int num:result){
       System.out.print(num);

@@ -37,8 +37,6 @@ public class BinaryTreeLevelOrderTraversal {
         if (node.right != null) {
           queue.offer(node.right);
         }
-
-
       }
       bigList.add(smallList);
     }
