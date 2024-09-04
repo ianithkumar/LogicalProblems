@@ -1,7 +1,7 @@
 package Arrays;
 //Replace each element with the largest element on the right
 public class GreatestElementOnTheRight {
-   public static void main(String a[]){
+   public static void main(String[] a ){
      int arr[] = {1,2,3,4,5};
      int j=arr.length-1;
      int max = arr[j];
