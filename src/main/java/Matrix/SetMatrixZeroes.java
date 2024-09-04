@@ -8,9 +8,9 @@ public class SetMatrixZeroes {
 
     System.out.println("Before Matrix To Zero");
 
-    for(int[] nums:arr){
-      for(int num:nums){
-        System.out.print(num+" ");
+    for (int[] nums : arr) {
+      for (int num : nums) {
+        System.out.print(num + " ");
       }
       System.out.println();
     }
@@ -35,9 +35,9 @@ public class SetMatrixZeroes {
 
     System.out.println("After Matrix To Zero");
 
-    for(int[] nums:arr){
-      for(int num:nums){
-        System.out.print(num+" ");
+    for (int[] nums : arr) {
+      for (int num : nums) {
+        System.out.print(num + " ");
       }
       System.out.println();
     }

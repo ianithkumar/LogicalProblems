@@ -13,15 +13,16 @@ public class ReverseNumber {
     int result = numReverse(num);
     System.out.println(result);
   }
+
   private static int numReverse(int num) {
-    int reverse=0,remain;
-    while(num>0) {
-      remain = num%10;
-      reverse=reverse+remain;
-      reverse=reverse*10;
-      num=num/10;
+    int reverse = 0, remain;
+    while (num > 0) {
+      remain = num % 10;
+      reverse = reverse + remain;
+      reverse = reverse * 10;
+      num = num / 10;
     }
-    reverse=reverse/10;
+    reverse = reverse / 10;
     return reverse;
   }
 

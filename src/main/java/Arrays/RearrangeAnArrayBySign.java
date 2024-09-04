@@ -19,7 +19,7 @@ public class RearrangeAnArrayBySign {
 
     System.out.println("After Arranging");
     for (int num : result) {
-      System.out.print(num+" ");
+      System.out.print(num + " ");
     }
 
   }

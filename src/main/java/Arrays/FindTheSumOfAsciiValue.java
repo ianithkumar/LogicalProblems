@@ -21,18 +21,6 @@ public class FindTheSumOfAsciiValue {
     System.out.println(obj.findSumAscii(arr1, arr2));
   }
 
-  public int findSumAscii(char[] temp1, char[] temp2) {
-    int finalNumber = 0;
-    Set<Integer> uniqueElement = getUniqueElement(temp1, temp2);
-
-    for (int num : uniqueElement) {
-      finalNumber += num;
-    }
-    int finalAnswer = findSum(finalNumber);
-    //System.out.println(finalAnswer);
-    return finalAnswer;
-  }
-
   private static int findSum(int finalNum) {
 
     while (finalNum >= 10) {
@@ -77,5 +65,17 @@ public class FindTheSumOfAsciiValue {
     }
 
     return result;
+  }
+
+  public int findSumAscii(char[] temp1, char[] temp2) {
+    int finalNumber = 0;
+    Set<Integer> uniqueElement = getUniqueElement(temp1, temp2);
+
+    for (int num : uniqueElement) {
+      finalNumber += num;
+    }
+    int finalAnswer = findSum(finalNumber);
+    //System.out.println(finalAnswer);
+    return finalAnswer;
   }
 }

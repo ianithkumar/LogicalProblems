@@ -15,17 +15,17 @@ public class LookAndSay {
     int count = 1;
     int i = 1;
     int current = num.charAt(0);
-    while(i<num.length()){
-    if (num.charAt(i) == current) {
-      count++;
-    } else {
-      result = result+count+num.charAt(i-1);
-      count = 1;
-      current = num.charAt(i);
+    while (i < num.length()) {
+      if (num.charAt(i) == current) {
+        count++;
+      } else {
+        result = result + count + num.charAt(i - 1);
+        count = 1;
+        current = num.charAt(i);
+      }
+      i++;
     }
-    i++;
-  }
-    result = result+count+num.charAt(i-1);
+    result = result + count + num.charAt(i - 1);
     return result;
   }
 

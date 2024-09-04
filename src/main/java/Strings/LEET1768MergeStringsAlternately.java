@@ -1,12 +1,13 @@
 package Strings;
 
 class LEET1768MergeStringsAlternately {
-  public static void main(String a[]){
+  public static void main(String a[]) {
     String word1 = "abc";
     String word2 = "pqrst";
-    String result = mergeAlternately(word1,word2);
+    String result = mergeAlternately(word1, word2);
     System.out.println(result);
   }
+
   public static String mergeAlternately(String word1, String word2) {
     StringBuilder result = new StringBuilder();
     int i = 0;
@@ -20,5 +21,5 @@ class LEET1768MergeStringsAlternately {
       i++;
     }
     return result.toString();
-}
+  }
 }
