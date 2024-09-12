@@ -9,7 +9,36 @@ public class Leet54SpiralMatrix {
     System.out.println(result);
   }
 
-  private static List<Integer> spiralMatrix(int matrix[][]) {
-    return null;
+  public static List<Integer> spiralMatrix(int matrix[][]) {
+    List<Integer> result = new ArrayList<>();
+    int size = matrix.length;
+    int left = 0;
+    int right = size - 1;
+    int top = 0;
+    int bottom = size - 1;
+
+    while (left <= right && top <= bottom) {
+      for (int i = left; i <= right; i++) {
+        result.add(matrix[top][i]);
+      }
+      top++;
+
+      for (int i = top; i <= bottom; i++) {
+        result.add(matrix[i][right]);
+      }
+      right--;
+
+      for (int i = right; i >= left; i--) {
+        result.add(matrix[bottom][i]);
+      }
+      bottom--;
+
+      for (int i = bottom; i >= top; i--) {
+        result.add(matrix[i][left]);
+      }
+      left++;
+
+    }
+    return result;
   }
 }

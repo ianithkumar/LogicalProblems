@@ -1,5 +1,7 @@
 package Matrix;
 
+import java.util.List;
+
 public class CreateSpiralMatrix {
   public static void main(String[] a) {
     int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
@@ -7,6 +9,9 @@ public class CreateSpiralMatrix {
     if (size * size == arr.length) {
       int[][] result = createSpiralMatrix(arr, size);
       printMatrix(result);
+      System.out.println("Calling Leet54SpiralMatrix");
+      List<Integer> resultFromSpiralMatrix = Matrix.Leet54SpiralMatrix.spiralMatrix(result);
+      System.out.println(resultFromSpiralMatrix);
     } else {
       System.out.println("The Array is not valid to create Spiral Matrix");
     }
