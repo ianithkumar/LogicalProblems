@@ -6,10 +6,11 @@ import java.util.List;
 
 public class MaximumConsecutiveSubsequence {
   public static void main(String[] args){
-    Integer[] arr = {45,5,2,3,1,4,6,7,8,15,13,10,16,12,11,14,23,56,78};  //Output : {10,11,12,13,14,15,16} -> 7
-    System.out.println(maximumConsecutiveSubsequence(arr));
+    MaximumConsecutiveSubsequence obj = new MaximumConsecutiveSubsequence();
+    int[] arr = {45,5,2,3,1,4,6,7,8,15,13,10,16,12,11,14,23,56,78};  //Output : {10,11,12,13,14,15,16} -> 7
+    System.out.println(obj.maximumConsecutiveSubsequence(arr));
   }
-  private static int maximumConsecutiveSubsequence(Integer[] arr){
+  public static int maximumConsecutiveSubsequence(int[] arr){
     int currentLength;
     int maxLength = 1;
     for (int j : arr) {
@@ -18,16 +19,11 @@ public class MaximumConsecutiveSubsequence {
         j=j+1;
         currentLength++;
       }
-//      ArrayList<Integer> list = new ArrayList<>(Arrays.asList(arr));
-//      while(list.contains(j+1)){
-//        j++;
-//        currentLength++;
-//      }
       maxLength = Math.max(currentLength, maxLength);
     }
     return maxLength;
   }
-  private static boolean arrayContains(Integer[] arr,int num){
+  public static boolean arrayContains(int[] arr, int num){
     for (int j : arr) {
       if (j == num) {
         return true;
