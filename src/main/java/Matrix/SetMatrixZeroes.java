@@ -3,10 +3,10 @@ package Matrix;
 public class SetMatrixZeroes {
   public static void main(String a[]) {
     int arr[][] = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
-    int rowLength[] = new int[arr.length];
-    int columnLength[] = new int[arr[0].length];
 
-    System.out.println("Before Matrix To Zero");
+    SetMatrixZeroes obj = new SetMatrixZeroes();
+
+    System.out.println("Before Set To Zero : ");
 
     for (int[] nums : arr) {
       for (int num : nums) {
@@ -14,6 +14,23 @@ public class SetMatrixZeroes {
       }
       System.out.println();
     }
+
+    int[][] resultMatrix = obj.setMatrixZero(arr);
+
+    System.out.println("After Set To Zero : ");
+
+    for (int[] nums : resultMatrix) {
+      for (int num : nums) {
+        System.out.print(num + " ");
+      }
+      System.out.println();
+    }
+  }
+
+  public int[][] setMatrixZero(int[][] arr) {
+
+    int rowLength[] = new int[arr.length];
+    int columnLength[] = new int[arr[0].length];
 
 
     for (int i = 0; i < rowLength.length; i++) {
@@ -32,15 +49,6 @@ public class SetMatrixZeroes {
         }
       }
     }
-
-    System.out.println("After Matrix To Zero");
-
-    for (int[] nums : arr) {
-      for (int num : nums) {
-        System.out.print(num + " ");
-      }
-      System.out.println();
-    }
-
+    return arr;
   }
 }
